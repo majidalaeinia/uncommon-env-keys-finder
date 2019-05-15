@@ -1,6 +1,6 @@
 #!/usr/bin/env python
-env_file = 'env.txt'
-env_example_file = 'env_example.txt'
+env_file = '.env'
+env_example_file = '.env.example'
 
 
 # !/usr/bin/env python

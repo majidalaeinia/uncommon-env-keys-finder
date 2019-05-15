@@ -1,3 +1,4 @@
+# There are five extra shits on this file, I bet you can find them by eyes.
 FIRST_SHIT=
 APP_NAME=Laravel
 APP_ENV=local

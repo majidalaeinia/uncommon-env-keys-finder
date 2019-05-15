@@ -1,0 +1,55 @@
+#!/usr/bin/env python
+def convert_each_file_line_to_a_list_item(file_name):
+    """
+    Convert each file line, into a list item.
+
+    :param file_name:
+    :return: list
+    """
+    try:
+        with open(file_name) as the_file:
+            the_file_lines = the_file.readlines()
+            the_file.close()
+
+        return the_file_lines
+
+    except Exception as error:
+        return error
+
+
+def make_a_list_from_the_file_keys(file_name):
+    """
+    Make a list from the file keys.
+
+    :param file_name:
+    :return: list
+    """
+    try:
+        the_file = []
+        for line in convert_each_file_line_to_a_list_item(file_name):
+            equal_index = line.find('=')
+            file_key = line[:equal_index]
+            the_file.append(file_key)
+
+        return the_file
+
+    except Exception as error:
+        return error
+
+
+def make_a_list_from_uncommon_items(list1, list2):
+    """
+    Make a list from uncommon items between two lists.
+
+    :param list1:
+    :param list2:
+    :return: list
+    """
+    try:
+        if len(list1) - len(list2) >= 0:
+            return list(set(list1) - set(list2))
+
+        return list(set(list2) - set(list1))
+
+    except Exception as error:
+        return error

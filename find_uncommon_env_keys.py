@@ -2,8 +2,6 @@
 env_file = '.env'
 env_example_file = '.env.example'
 
-
-# !/usr/bin/env python
 def convert_each_file_line_to_a_list_item(file_name):
     """
     Convert each file line, into a list item.
@@ -61,9 +59,6 @@ def make_a_list_from_uncommon_items(list1, list2):
 
 
 if __name__ == '__main__':
-    """
-    Print the uncommon keys in laravel `.env` and `.env.example` files.
-    """
     if len(make_a_list_from_uncommon_items(make_a_list_from_the_file_keys(env_file),
                                            make_a_list_from_the_file_keys(env_example_file))) == 0:
         print('The files have the same keys, no need to double check.')

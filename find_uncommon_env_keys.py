@@ -24,7 +24,7 @@ def convert_each_file_line_to_a_list_item(file_name):
     """
     Convert each file line, into a list item.
 
-    :param file_name:
+    :param file_name: string
     :return: list
     """
     try:
@@ -42,7 +42,7 @@ def make_a_list_from_the_file_keys(file_name):
     """
     Make a list from the file keys.
 
-    :param file_name:
+    :param file_name: string
     :return: list
     """
     try:
@@ -62,8 +62,8 @@ def make_a_list_from_uncommon_items(list1, list2):
     """
     Make a list from uncommon items between two lists.
 
-    :param list1:
-    :param list2:
+    :param list1: list
+    :param list2: list
     :return: list
     """
     try:

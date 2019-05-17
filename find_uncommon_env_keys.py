@@ -3,6 +3,23 @@ env_file = '.env'
 env_example_file = '.env.example'
 
 
+def count_of_keys_available(file_name):
+    """
+    Count the number of non-blank and non-comment lines in a file.
+    By comment, we mean the lines starting with '#'.
+
+    :param file_name: string
+    :return: int
+    """
+    with open(file_name, 'r') as f:
+        lines = f.readlines()
+        count_of_lines_starting_with_a_key = len(
+            [line for line in lines if (line.strip(' \n') != '' and line[0] != '#')])
+        f.close()
+
+        return count_of_lines_starting_with_a_key
+
+
 def convert_each_file_line_to_a_list_item(file_name):
     """
     Convert each file line, into a list item.

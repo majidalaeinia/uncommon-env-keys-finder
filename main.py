@@ -18,4 +18,5 @@ if __name__ == '__main__':
 
     for item in make_a_list_from_uncommon_items(make_a_list_from_the_file_keys(env_file),
                                                 make_a_list_from_the_file_keys(env_example_file)):
-        print(item)
+        if item[0] != '#':
+            print(item)

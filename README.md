@@ -13,10 +13,16 @@ As you might have read on [laravel documentation](https://laravel.com/docs/5.6/c
 You may forget to add some keys to the `.env.example` file, while it is added on the `.env` file and not even committed, because of the source control considerations. This repository helps you find the uncommon keys between `.env` and `.env.example` files, no need to double-check it by eyes.
 
 ## How to use this code with laravel?
-You may **just** copy [find_uncommon_env_keys.py](https://github.com/MajidAlaeinia/uncommon-env-keys-finder/blob/master/find_uncommon_env_keys.py) to the root directory of your project, just where `.env` and `.env.example` are, and run it:  
-  
-```python
+```
+cd path/to/your/laravel/project/
+echo 'find_uncommon_env_keys.py' >> .gitignore
+wget https://github.com/MajidAlaeinia/uncommon-env-keys-finder/blob/master/find_uncommon_env_keys.py
 python find_uncommon_env_keys.py
 ```
+  
 
 That's it.
+
+## TODO
+- [ ] Php Equivalent Implementation.  
+- [ ] Bash Implementation with `diff`.

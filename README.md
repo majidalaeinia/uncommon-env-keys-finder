@@ -18,7 +18,7 @@ $ cd path/to/your/laravel/project/
 
 $ echo 'find_uncommon_env_keys.py' >> .gitignore
 
-$ wget https://github.com/MajidAlaeinia/uncommon-env-keys-finder/blob/master/find_uncommon_env_keys.py
+$ wget https://raw.githubusercontent.com/MajidAlaeinia/uncommon-env-keys-finder/master/find_uncommon_env_keys.py
 
 $ python find_uncommon_env_keys.py
 ```
@@ -27,5 +27,6 @@ $ python find_uncommon_env_keys.py
 That's it.
 
 ## TODO
+- [ ] Determine which key is from which file (.env or .env.example).  
 - [ ] Php Equivalent Implementation.  
 - [ ] Bash Implementation with `diff`.

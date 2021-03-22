@@ -29,4 +29,4 @@ That's it.
 ## TODO
 - [ ] Determine which key is from which file (.env or .env.example).  
 - [ ] Php Equivalent Implementation.  
-- [ ] Bash Implementation with `diff`.
+- [x] Bash Implementation with `diff`. Now it's done: `diff .env.example .env | grep "=" | cut -d '=' -f 1 | sed 's/^..//' | sort | uniq -c | grep 1 | sed 's/^........//'`
